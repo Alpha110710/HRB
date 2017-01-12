@@ -1,0 +1,7 @@
+#Thu Jan 12 14:28:24 CST 2017
+base.0=E\:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_95631e75e6714ec419e7c86a2313c0c7dd7b1ba3
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ab33b3a612d50c4008f3881ebb7710c29091c3f5\\classes.dex
+base.1=E\:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ab33b3a612d50c4008f3881ebb7710c29091c3f5
+file.0=E\:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_95631e75e6714ec419e7c86a2313c0c7dd7b1ba3\\classes.dex

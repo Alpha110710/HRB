@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x250"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_round_shape"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/y20"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/x10"
+        android:src="@drawable/select_back"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x130"
+        android:layout_gravity="center"
+        android:src="@drawable/invest_failure" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y10"
+        android:text="sorry , 投资失败 !"
+        android:textColor="@color/font_black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/back_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_marginBottom="@dimen/y25"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:layout_marginTop="@dimen/y15"
+        android:background="@drawable/shape_round_red_button"
+        android:gravity="center"
+        android:text="返回投资列表"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

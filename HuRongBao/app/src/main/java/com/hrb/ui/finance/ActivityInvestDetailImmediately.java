@@ -1,0 +1,560 @@
+package com.hrb.ui.finance;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.hrb.ExtraConfig;
+import com.hrb.HuRongBaoApp;
+import com.hrb.MainActivity;
+import com.hrb.R;
+import com.hrb.biz.AccountBiz;
+import com.hrb.biz.FinanceBiz;
+import com.hrb.biz.exception.BizFailure;
+import com.hrb.biz.exception.ZYException;
+import com.hrb.biz.task.BizDataAsyncTask;
+import com.hrb.dialog.RedSelectDialog;
+import com.hrb.dialog.TicketSelectDialog;
+import com.hrb.model.AlllMoneyModel;
+import com.hrb.model.BiddingForTransferModel;
+import com.hrb.model.GetInterestTotalModel;
+import com.hrb.model.GetTenderInfoModel;
+import com.hrb.model.MyAccountModel;
+import com.hrb.model.RedPacketModel;
+import com.hrb.model.TicketModel;
+import com.hrb.ui.account.ActivityRecharge;
+import com.hrb.ui.base.BaseActivity;
+import com.hrb.utils.android.DialogInterface;
+import com.hrb.utils.java.AlertUtil;
+import com.hrb.utils.java.StringUtil;
+
+/**
+ * Created by Ls on 2016/10/21.
+ */
+
+public class ActivityInvestDetailImmediately extends BaseActivity implements View.OnClickListener {
+
+    private String productId, DIRECTIONAL_PWD_FLG, EXP_FLG;
+    private TextView immediately_add_amount_tv;
+    private TextView immediately_add_select_tv;
+    private TextView immediately_add_yours_tv;
+    private TextView immediately_all_invest_tv;
+    private EditText immediately_amount_invest_et;
+    private TextView immediately_amount_rest_tv;
+    private TextView immediately_income_tv;
+    private TextView immediately_max_money_tv;
+    private EditText immediately_psw_et;
+    private TextView immediately_recharge_tv;
+    private TextView immediately_red_amount_tv;
+    private TextView immediately_red_select_tv;
+    private TextView immediately_red_yours_tv;
+    private LinearLayout immediately_psw_ll;
+    private TextView immediately_account_rest_tv;
+
+    private RedPacketModel Red_Models;// 选择的红包对应的models里面的值
+    private TicketModel ticket_Models;// 加息券对应的model值
+    private String mEditValue = "";
+    private GetTenderInfoModel getTenderInfoModel;
+    private LinearLayout layout;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_invest_detail_immediately);
+        productId = getIntent().getStringExtra(ExtraConfig.IntentExtraKey.PRODUCT_ID);
+        DIRECTIONAL_PWD_FLG = getIntent().getStringExtra(ExtraConfig.IntentExtraKey.DIRECTIONAL_PWD_FLG);
+        EXP_FLG = getIntent().getStringExtra("EXP_FLG");
+
+        initView();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getTenderInfo();
+    }
+
+    private void initView() {
+        TextView tv_title = (TextView) findViewById(R.id.tv_title);
+        ImageView iv_back = (ImageView) findViewById(R.id.iv_back);
+
+        Button immediately_confirm = (Button) findViewById(R.id.immediately_confirm);
+        immediately_add_amount_tv = (TextView) findViewById(R.id.immediately_add_amount_tv);
+        immediately_add_select_tv = (TextView) findViewById(R.id.immediately_add_select_tv);
+        immediately_add_yours_tv = (TextView) findViewById(R.id.immediately_add_yours_tv);
+        immediately_all_invest_tv = (TextView) findViewById(R.id.immediately_all_invest_tv);
+        immediately_amount_invest_et = (EditText) findViewById(R.id.immediately_amount_invest_et);
+        immediately_amount_rest_tv = (TextView) findViewById(R.id.immediately_amount_rest_tv);
+        immediately_income_tv = (TextView) findViewById(R.id.immediately_income_tv);
+        immediately_max_money_tv = (TextView) findViewById(R.id.immediately_max_money_tv);
+        immediately_psw_et = (EditText) findViewById(R.id.immediately_psw_et);
+        immediately_recharge_tv = (TextView) findViewById(R.id.immediately_recharge_tv);
+        immediately_red_amount_tv = (TextView) findViewById(R.id.immediately_red_amount_tv);
+        immediately_red_select_tv = (TextView) findViewById(R.id.immediately_red_select_tv);
+        immediately_red_yours_tv = (TextView) findViewById(R.id.immediately_red_yours_tv);
+        immediately_psw_ll = (LinearLayout) findViewById(R.id.immediately_psw_ll);
+        layout = (LinearLayout) findViewById(R.id.layout);
+        immediately_account_rest_tv = (TextView) findViewById(R.id.immediately_account_rest_tv);
+
+        tv_title.setText("投资详情");
+        iv_back.setOnClickListener(this);
+        immediately_confirm.setOnClickListener(this);
+        immediately_add_select_tv.setOnClickListener(this);
+        immediately_red_select_tv.setOnClickListener(this);
+        immediately_recharge_tv.setOnClickListener(this);
+        immediately_all_invest_tv.setOnClickListener(this);
+
+        if (EXP_FLG.equals("1")) {
+            //体验标
+            immediately_account_rest_tv.setText("体验金余额 : ");
+            immediately_recharge_tv.setVisibility(View.INVISIBLE);
+            findViewById(R.id.ll_redbag).setVisibility(View.GONE);
+            findViewById(R.id.ll_ticket).setVisibility(View.GONE);
+
+        }
+
+
+        // 判断edittext得到焦点还是失去焦点状态
+        immediately_amount_invest_et
+                .setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {// 失去焦点
+                            // 获取收益（接口）
+                            if (!mEditValue.equals((immediately_amount_invest_et
+                                    .getEditableText().toString().trim()))) {
+                                mEditValue = immediately_amount_invest_et
+                                        .getEditableText().toString().trim();
+
+                                ticket_Models = null;
+                                Red_Models = null;
+                                setRedAdd();
+
+
+                                if (StringUtil.isEmpty(mEditValue)) {
+                                    immediately_income_tv.setText("0.0");
+                                } else {
+                                    getInterestTotal("", true);
+                                }
+                            }
+                        }
+                    }
+                });
+
+        layout.setOnTouchListener(new View.OnTouchListener() {
+
+            public boolean onTouch(View v, MotionEvent event) {
+                layout.setFocusable(true);
+                layout.setFocusableInTouchMode(true);
+                layout.requestFocus();
+
+                return false;
+            }
+        });
+    }
+
+    //进入页面获取数据
+    private void getTenderInfo() {
+        BizDataAsyncTask<GetTenderInfoModel> getTenderInfo = new BizDataAsyncTask<GetTenderInfoModel>(getWaitingView()) {
+            @Override
+            protected GetTenderInfoModel doExecute() throws ZYException, BizFailure {
+                return FinanceBiz.getTenderInfo(productId);
+            }
+
+            @Override
+            protected void onExecuteSucceeded(GetTenderInfoModel getTenderInfoModel) {
+                ActivityInvestDetailImmediately.this.getTenderInfoModel = getTenderInfoModel;
+                if ("1".equals(getTenderInfoModel.getDIRECTIONAL_PWD_FLG()))
+                    immediately_psw_ll.setVisibility(View.VISIBLE);
+                immediately_amount_rest_tv.setText(getTenderInfoModel.getUSABLE_AMOUNT());
+                immediately_amount_invest_et.setHint("最小投资金额"
+                        + getTenderInfoModel.getTENDER_MIN_CAPTION() + "元");
+                if (!"".equals(getTenderInfoModel.getTENDER_MAX_CAPTION())) {
+                    immediately_max_money_tv.setText("最大投资金额"
+                            + getTenderInfoModel.getTENDER_MAX_CAPTION() + "元");
+                } else {
+                    immediately_max_money_tv.setText("最大投资金额不限");
+                }
+                immediately_income_tv.setText("0.0");
+                setRedAdd();
+
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(ActivityInvestDetailImmediately.this, error);
+                }
+            }
+        };
+        getTenderInfo.execute();
+    }
+
+
+    // 获取收益
+    private void getInterestTotal(final String ticket, final boolean isFirst) {
+        BizDataAsyncTask<GetInterestTotalModel> getInCome = new BizDataAsyncTask<GetInterestTotalModel>() {
+
+            @Override
+            protected void onExecuteSucceeded(GetInterestTotalModel result) {
+                immediately_income_tv.setText(result.getEXPECTED_INTEREST());
+            }
+
+            @Override
+            protected GetInterestTotalModel doExecute() throws ZYException, BizFailure {
+                return FinanceBiz.getInterestTotal(productId, immediately_amount_invest_et
+                        .getEditableText().toString().trim(), ticket);
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                immediately_income_tv.setText("0.0");
+                Red_Models = null;
+                ticket_Models = null;
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(ActivityInvestDetailImmediately.this, error);
+                }
+
+            }
+        };
+        if (isFirst) {
+            getInCome.setWaitingView(getWaitingView());
+        }
+
+        getInCome.execute();
+    }
+
+    /***
+     * 判断输入框的输入是否有为null
+     */
+    private boolean getSubmitCheck() {
+
+        if (StringUtil.isEmpty(immediately_amount_invest_et.getText().toString().trim())) {
+            immediately_amount_invest_et.requestFocus();
+            AlertUtil.t(ActivityInvestDetailImmediately.this, "请输入投资金额");
+            return false;
+        }
+
+        if ("1".equals(getTenderInfoModel.getDIRECTIONAL_PWD_FLG())) {//需要定向密码
+            if (StringUtil.isEmpty(immediately_psw_et.getText().toString().trim())) {
+                AlertUtil.t(ActivityInvestDetailImmediately.this, "请输入定向密码");
+                immediately_psw_et.requestFocus();
+                return false;
+            }
+        }
+
+        return true;
+
+    }
+
+    /***
+     * 判断红包加息券是否为空
+     */
+    private void getCheck() {
+        if (Red_Models == null && ticket_Models == null)
+            biddingSms("", "");
+        else if (Red_Models == null)
+            biddingSms("", ticket_Models.getId());
+        else if (ticket_Models == null)
+            biddingSms(Red_Models.getId(), "");
+        else
+            biddingSms(Red_Models.getId(), ticket_Models.getId());
+    }
+
+    /**
+     * 红包
+     */
+    private void getRedPacketDialog() {
+        RedSelectDialog dialog = new RedSelectDialog(this, R.style.My_Dialog,
+                immediately_amount_invest_et.getText().toString().trim(), productId,
+                new DialogInterface() {
+
+                    @Override
+                    public void selectRedPacket(boolean select,
+                                                RedPacketModel models) {
+                        if (select == true) {
+                            Red_Models = models;
+                            immediately_red_yours_tv.setText("已使用红包");
+                            immediately_red_amount_tv.setText(models.getRed_Money());
+                            immediately_red_select_tv.setText("选择其他红包");
+
+                        }
+                    }
+
+                    @Override
+                    public void selectTicket(boolean select, TicketModel models) {
+
+                    }
+                });
+        dialog.show();
+    }
+
+    /**
+     * 加息券
+     */
+    private void getTicketDialog() {
+        TicketSelectDialog dialog = new TicketSelectDialog(this,
+                R.style.My_Dialog, immediately_amount_invest_et.getText().toString()
+                .trim(), productId, new DialogInterface() {
+
+            @Override
+            public void selectRedPacket(boolean select,
+                                        RedPacketModel models) {
+            }
+
+            @Override
+            public void selectTicket(boolean select, TicketModel models) {
+                if (select == true) {
+                    ticket_Models = models;
+                    immediately_add_yours_tv.setText("已使用加息券");
+                    immediately_add_amount_tv.setText(models.getRate() + "%");
+                    immediately_add_select_tv.setText("选择其他加息券");
+                    getInterestTotal(ticket_Models.getRate(), true);
+                }
+            }
+        });
+        dialog.show();
+    }
+
+    //第一次发送验证码
+    private void biddingSms(final String redId, final String ticketId) {
+        BizDataAsyncTask<BiddingForTransferModel> biddingSms = new BizDataAsyncTask<BiddingForTransferModel>(getWaitingView()) {
+            @Override
+            protected BiddingForTransferModel doExecute() throws ZYException, BizFailure {
+                return FinanceBiz.biddingSms(productId, immediately_amount_invest_et.getEditableText().toString().trim(),
+                        immediately_psw_et.getEditableText().toString().trim(), DIRECTIONAL_PWD_FLG, redId, ticketId);
+
+            }
+
+            @Override
+            protected void onExecuteSucceeded(BiddingForTransferModel s) {
+                Intent intent = new Intent(ActivityInvestDetailImmediately.this, ActivityInvestVerify.class);
+                intent.putExtra("ORDER_NO", s.getORDER_NO());
+                intent.putExtra(ExtraConfig.IntentExtraKey.PRODUCT_ID, productId);
+                intent.putExtra(ExtraConfig.IntentExtraKey.AMOUNT, immediately_amount_invest_et.getEditableText().toString().trim());
+                intent.putExtra(ExtraConfig.IntentExtraKey.PASSWORD, immediately_psw_et.getEditableText().toString().trim());
+                intent.putExtra(ExtraConfig.IntentExtraKey.RED_ID, redId);
+                intent.putExtra(ExtraConfig.IntentExtraKey.TICKET_ID, ticketId);
+                intent.putExtra(ExtraConfig.IntentExtraKey.DIRECTIONAL_PWD_FLG, DIRECTIONAL_PWD_FLG);
+                startActivity(intent);
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(ActivityInvestDetailImmediately.this, error);
+                }
+            }
+        };
+
+        biddingSms.execute();
+    }
+
+    /***
+     * 判断红包加息券是否为空 调体验标投资接口
+     */
+    private void getCheckExperience() {
+        if (Red_Models == null && ticket_Models == null)
+            promptlyInvestment("", "");
+        else if (Red_Models == null)
+            promptlyInvestment("", ticket_Models.getId());
+        else if (ticket_Models == null)
+            promptlyInvestment(Red_Models.getId(), "");
+        else
+            promptlyInvestment(Red_Models.getId(), ticket_Models.getId());
+    }
+
+    // 体验标立即投资
+    private void promptlyInvestment(final String redId, final String ticketId) {
+        BizDataAsyncTask<String> promptlyInvestment = new BizDataAsyncTask<String>(getWaitingView()) {
+
+            @Override
+            protected void onExecuteSucceeded(String result) {
+
+                AlertUtil.t(ActivityInvestDetailImmediately.this, "投资成功!");
+                Intent intent = new Intent(ActivityInvestDetailImmediately.this, MainActivity.class);
+                HuRongBaoApp.globalIndex = 1;
+                HuRongBaoApp.goInvest = 1;
+                startActivity(intent);
+
+            }
+
+            @Override
+            protected String doExecute() throws ZYException, BizFailure {
+
+                return FinanceBiz.promptlyInvestment(productId,
+                        immediately_amount_invest_et.getEditableText().toString().trim(),
+                        immediately_psw_et.getEditableText().toString().trim(),
+                        redId, ticketId, "",
+                        "", "");
+
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(ActivityInvestDetailImmediately.this, error);
+                    finish();
+                }
+            }
+
+        };
+
+        promptlyInvestment.execute();
+    }
+
+    /**
+     * 全投资接口
+     */
+    private void getAllMoney(final String rateId) {
+
+        BizDataAsyncTask<AlllMoneyModel> getAllMoney = new BizDataAsyncTask<AlllMoneyModel>(getWaitingView()) {
+
+            @Override
+            protected void onExecuteSucceeded(AlllMoneyModel result) {
+                immediately_amount_invest_et.setText(result.getALL_AMOUNT());
+                immediately_income_tv.setText(result.getEXPECTED_INTEREST());
+                mEditValue = result.getALL_AMOUNT();
+
+                ticket_Models = null;
+                Red_Models = null;
+                setRedAdd();
+            }
+
+            @Override
+            protected AlllMoneyModel doExecute() throws ZYException, BizFailure {
+                return FinanceBiz.allTender(productId, rateId);// token
+                // 标id，加息券id
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(ActivityInvestDetailImmediately.this, error);
+                }
+
+            }
+        };
+
+        getAllMoney.execute();
+    }
+
+
+    //设置红包加息券为空是显示
+    private void setRedAdd() {
+        if (getTenderInfoModel != null) {
+            if (!"0".equals(getTenderInfoModel.getRATE_CNT())) {
+                immediately_add_yours_tv.setVisibility(View.VISIBLE);
+                immediately_add_amount_tv.setVisibility(View.VISIBLE);
+                immediately_add_select_tv.setVisibility(View.VISIBLE);
+                immediately_add_yours_tv.setText("您有" + getTenderInfoModel.getRATE_CNT());
+                immediately_add_amount_tv.setText("个加息券");
+            } else {
+                immediately_add_select_tv.setVisibility(View.INVISIBLE);
+                immediately_add_yours_tv.setVisibility(View.VISIBLE);
+                immediately_add_yours_tv.setText("暂无加息券");
+                immediately_add_amount_tv.setVisibility(View.INVISIBLE);
+            }
+
+
+            if (!"0".equals(getTenderInfoModel.getRED_CNT())) {
+                immediately_red_yours_tv.setVisibility(View.VISIBLE);
+                immediately_red_amount_tv.setVisibility(View.VISIBLE);
+                immediately_red_select_tv.setVisibility(View.VISIBLE);
+                immediately_red_yours_tv.setText("您有" + getTenderInfoModel.getRED_CNT());
+                immediately_red_amount_tv.setText("个红包");
+            } else {
+                immediately_red_yours_tv.setVisibility(View.VISIBLE);
+                immediately_red_yours_tv.setText("暂无红包");
+                immediately_red_select_tv.setVisibility(View.INVISIBLE);
+                immediately_red_amount_tv.setVisibility(View.INVISIBLE);
+            }
+        }
+    }
+
+    private void getAccountPageData() {
+        BizDataAsyncTask<MyAccountModel> getMyAccountTask = new BizDataAsyncTask<MyAccountModel>(getWaitingView()) {
+            @Override
+            protected MyAccountModel doExecute() throws ZYException, BizFailure {
+                return AccountBiz.getMyAccountPage();
+            }
+
+            @Override
+            protected void onExecuteSucceeded(MyAccountModel myAccountModel) {
+
+                Intent itRecharge = new Intent(ActivityInvestDetailImmediately.this, ActivityRecharge.class);
+                itRecharge.putExtra(ExtraConfig.IntentExtraKey.MY_ACCOUNT, myAccountModel);
+                startActivity(itRecharge);
+
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(ActivityInvestDetailImmediately.this, error);
+                }
+            }
+        };
+
+        getMyAccountTask.execute();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.iv_back:
+                finish();
+                break;
+            case R.id.immediately_recharge_tv:
+                //充值
+                getAccountPageData();
+                break;
+            case R.id.immediately_add_select_tv:
+                if (StringUtil.isEmpty(immediately_amount_invest_et.getEditableText().toString().trim())) {
+                    AlertUtil.t(this, "请输入投资金额");
+                    return;
+                }
+                getTicketDialog();
+                //选择加息券
+                break;
+            case R.id.immediately_red_select_tv:
+                if (StringUtil.isEmpty(immediately_amount_invest_et.getEditableText().toString().trim())) {
+                    AlertUtil.t(this, "请输入投资金额");
+                    return;
+                }
+                getRedPacketDialog();
+                //选择红包
+                break;
+
+            case R.id.immediately_all_invest_tv:
+                //全投
+                getAllMoney("");
+                break;
+            case R.id.immediately_confirm:
+                if (getTenderInfoModel == null) {
+                    return;
+                }
+                //立即投资
+                if (getSubmitCheck()) {
+                    if (EXP_FLG.equals("1")) {
+                        //体验标
+                        getCheckExperience();
+                    } else {
+                        getCheck();
+                    }
+
+                }
+                break;
+
+        }
+
+    }
+}

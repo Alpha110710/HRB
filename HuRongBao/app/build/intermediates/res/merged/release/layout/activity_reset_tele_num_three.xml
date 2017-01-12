@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_grey" />
+    <!-- 手机号码修改 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_deep" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y45"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center_vertical"
+            android:text="新手机号"
+            android:textColor="@color/font_black" />
+
+
+        <EditText
+            android:id="@+id/et_reset_num_three_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_weight="1"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/font_black"
+            android:textColorHint="@color/font_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center_vertical"
+            android:text="新手机验证码"
+            android:textColor="@color/font_black" />
+
+
+        <EditText
+            android:id="@+id/et_reset_num_three_verify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number"
+            android:cursorVisible="true"
+            android:textColor="@color/font_black"
+            android:textColorHint="@color/font_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_reset_num_three_verify"
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/y20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/shape_large_red_white"
+            android:paddingLeft="@dimen/x7"
+            android:paddingRight="@dimen/x7"
+            android:text="获取验证码"
+            android:textSize="14sp"
+            android:textColor="@color/red_light" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/y15"
+        android:text="*6-20个字符 , 不能单独使用字母、数字或符号"
+        android:textColor="@color/font_red"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_reset_num_three_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y25"
+        android:background="@drawable/shape_round_red_button"
+        android:text="确认修改"
+        android:textColor="@color/white" />
+
+</LinearLayout>

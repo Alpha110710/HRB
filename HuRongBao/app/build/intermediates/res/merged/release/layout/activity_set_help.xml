@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_deep" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="我的账户"
+        android:textColor="@color/font_black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y10"
+            android:src="@drawable/set_help_03" />
+
+        <TextView
+            android:id="@+id/set_help_bank_card_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="我的银行卡"
+            android:textColor="@color/font_black" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y10"
+            android:src="@drawable/set_help_06" />
+
+        <TextView
+            android:id="@+id/set_help_security_center_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="安全中心"
+            android:textColor="@color/font_black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="服务"
+        android:textColor="@color/font_black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y10"
+            android:src="@drawable/set_help_08" />
+
+        <TextView
+            android:id="@+id/set_help_help_center_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="帮助中心"
+            android:textColor="@color/font_black" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y10"
+            android:src="@drawable/set_help_10" />
+
+        <TextView
+            android:id="@+id/set_help_auto_bidding_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="自动投标"
+            android:textColor="@color/font_black" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y10"
+            android:src="@drawable/set_help_12" />
+
+        <TextView
+            android:id="@+id/set_help_profit_loss_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="个人损益"
+            android:textColor="@color/font_black" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_help_login_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@color/white"
+        android:text="安全退出"
+        android:textColor="@color/font_black" />
+
+
+</LinearLayout>

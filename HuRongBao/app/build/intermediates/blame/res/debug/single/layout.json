@@ -1,0 +1,722 @@
+[
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_bank_card.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_add_bank_card.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_invite_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_invite_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_transfer_can.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_transfer_can.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\header_red.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\header_red.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\waiting_view.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\waiting_view.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_invest_bidding.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_invest_bidding.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset_tele_num_two.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_reset_tele_num_two.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_company_profile.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_company_profile.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popup_bind_bank_card.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\popup_bind_bank_card.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_withdraw.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_withdraw.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\notification.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\waiting_view_loading_widget.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\waiting_view_loading_widget.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_recharge_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_recharge_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_investment_success.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\dialog_investment_success.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_transfer_can.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_transfer_can.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_bank_card_had.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_my_bank_card_had.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_invest_payment.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_invest_payment.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_invest.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_my_invest.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_account.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_account.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_watch.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_message_watch.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_invest_hold.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_invest_hold.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_add_coupon_red.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_add_coupon_red.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auto_bidding_set.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_auto_bidding_set.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_invest_bidding.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_invest_bidding.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_integral.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_integral.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_invest_detail_immediately.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_invest_detail_immediately.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_web_view.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_web_view.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_invest_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_invest_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_red_packet_use_rule.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\dialog_red_packet_use_rule.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_invite_friend.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_invite_friend.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_auto_bidding_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_auto_bidding_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_message_center.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_message_center.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_realnameauth.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_realnameauth.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset_tele_num_one.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_reset_tele_num_one.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_award_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_award_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_transfer_ing.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_transfer_ing.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_bank_card.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_my_bank_card.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_transfer.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_my_transfer.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_red_packet_black.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_red_packet_black.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_invest_detail_more.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_invest_detail_more.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_transfer_had.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_transfer_had.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\header_grey.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\header_grey.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_add_rate_coupon_presented.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_add_rate_coupon_presented.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\HuRongBao\\library\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\global.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\global.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_find_pwd.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_find_pwd.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_recharge_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_recharge_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_transfer_ing.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_transfer_ing.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_red_packet_used.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_red_packet_used.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_add_rate_coupon_used.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_add_rate_coupon_used.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_add_rate_coupon_unused.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_add_rate_coupon_unused.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_transfer_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_transfer_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_return_money_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_return_money_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer_verify.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_transfer_verify.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\include_my_bank_card.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\include_my_bank_card.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_add_rate_coupon.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_my_add_rate_coupon.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset_pwd.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_reset_pwd.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_news_center_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_news_center_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_withdraw_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_withdraw_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_add_rate_coupon_gived.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_add_rate_coupon_gived.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_regist.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_regist.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_award_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_award_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_zq_transfer.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_zq_transfer.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_invite_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_invite_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_recharge_verify.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_recharge_verify.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splash.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\splash.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_red_packet_out_of_data.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_red_packet_out_of_data.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfert_detail_red.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_transfert_detail_red.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_add_rate_coupon_out_of_data.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_add_rate_coupon_out_of_data.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer_detail_gray.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_transfer_detail_gray.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_loan_data.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_loan_data.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_us.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_contact_us.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_return_money_plan.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_return_money_plan.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_recharge_fast.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_recharge_fast.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset_tele_num_three.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_reset_tele_num_three.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer_detail_buy.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_transfer_detail_buy.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auto_bidding_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_auto_bidding_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_invest_verify.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_invest_verify.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_invest_topic.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_invest_topic.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_transfer_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_listview_dialog.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_listview_dialog.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_show_big_image.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_show_big_image.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_zq_transfer.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_zq_transfer.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popup_select.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\popup_select.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_finance.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_finance.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_inegral.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_inegral.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_more.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_more.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_red_packet_used.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_red_packet_used.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_help.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_set_help.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_news_center.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_news_center.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_invest_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_invest_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_security_center.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_security_center.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_news_center.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_news_center.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_use_red_packet.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\dialog_use_red_packet.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\HuRongBao\\library\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_invest_payment.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_invest_payment.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_invest_topic.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_invest_topic.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auto_bidding_list.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_auto_bidding_list.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_pwd_change.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_login_pwd_change.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_personal_profit_loss.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_personal_profit_loss.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_invest_hold.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_invest_hold.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_transfer.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deal_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_deal_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_red_packet.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_my_red_packet.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my_red_packet_unused.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\fragment_my_red_packet_unused.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_transfer_had.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_transfer_had.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_red_packet_red.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_my_red_packet_red.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popup_add_give_coupon.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\popup_add_give_coupon.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_return_money_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_return_money_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_deal_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_deal_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_money_detail.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_money_detail.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_loan_data.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_loan_data.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\include_my_bank_card_had.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\include_my_bank_card_had.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_open_account.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_open_account.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deal_pwd_reset.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_deal_pwd_reset.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_money_detail_zhai.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_money_detail_zhai.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_recharge.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_recharge.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_auto_bidding_list.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_auto_bidding_list.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_return_money_plan.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_return_money_plan.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_invest_record.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_invest_record.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_center.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\activity_message_center.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_personal_profit_loss.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\item_personal_profit_loss.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_investment_failure.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\src\\main\\res\\layout\\dialog_investment_failure.xml"
+    },
+    {
+        "merged": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "E:\\HuRongBao\\HuRongBao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_navigation_item_subheader.xml"
+    }
+]

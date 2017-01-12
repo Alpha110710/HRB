@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/translucence"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/header_grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_deep" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户余额 : "
+                    android:textColor="@color/font_black" />
+
+                <TextView
+                    android:id="@+id/immediately_amount_rest_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="--"
+                    android:textColor="@color/font_black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/font_black" />
+
+                <TextView
+                    android:id="@+id/immediately_recharge_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x10"
+                    android:paddingBottom="@dimen/y5"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingTop="@dimen/y5"
+                    android:text="充值"
+                    android:textColor="@color/red_light"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/y10"
+                    android:gravity="top"
+                    android:text="投资金额 : "
+                    android:textColor="@color/font_black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/immediately_amount_invest_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y2"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:ellipsize="end"
+                        android:hint="最小投资金额50元"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/y5"
+                        android:textColor="@color/font_black"
+                        android:textColorHint="@color/font_gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_deep" />
+
+                    <TextView
+                        android:id="@+id/immediately_max_money_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最大投资金额200000元"
+                        android:textColor="@color/font_gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/y5"
+                    android:gravity="top"
+                    android:text="元"
+                    android:textColor="@color/font_black" />
+
+                <TextView
+                    android:id="@+id/immediately_all_invest_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginTop="@dimen/y2"
+                    android:paddingBottom="@dimen/y5"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingTop="@dimen/y5"
+                    android:text="全投"
+                    android:textColor="@color/red_light"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_redbag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x15"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="我的红包 :　"
+                    android:textColor="@color/font_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/immediately_red_yours_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您有--" />
+
+
+                    <TextView
+                        android:id="@+id/immediately_red_amount_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="个红包" />
+
+                    <TextView
+                        android:id="@+id/immediately_red_select_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x10"
+                        android:paddingBottom="@dimen/y3"
+                        android:paddingTop="@dimen/y3"
+                        android:text="选择红包"
+                        android:textColor="@color/red_light" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x15"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="加息券　 :　"
+                    android:textColor="@color/font_black" />
+
+                <LinearLayout
+                    android:id="@+id/layout_ticket2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/my_ticket"
+                        android:layout_width="@dimen/x50"
+                        android:layout_height="@dimen/y20"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="选择" />
+
+                    <TextView
+                        android:id="@+id/select_my_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:paddingBottom="@dimen/y3"
+                        android:paddingTop="@dimen/y3"
+                        android:text="其他加息券"
+                        android:textColor="@color/red_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_ticket1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/immediately_add_yours_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您有--" />
+
+
+                    <TextView
+                        android:id="@+id/immediately_add_amount_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="个加息券" />
+
+                    <TextView
+                        android:id="@+id/immediately_add_select_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x10"
+                        android:paddingBottom="@dimen/y3"
+                        android:paddingTop="@dimen/y3"
+                        android:text="请选择加息券"
+                        android:textColor="@color/red_light" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预计收益 : "
+                    android:textColor="@color/font_black" />
+
+                <TextView
+                    android:id="@+id/immediately_income_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="--"
+                    android:textColor="@color/font_black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/font_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/immediately_psw_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/y10"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="定向密码 :"
+                    android:textColor="@color/font_black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/immediately_psw_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:inputType="textPassword"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/y2"
+                        android:paddingTop="@dimen/y2"
+                        android:textColor="@color/font_black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="@dimen/x30"
+                        android:background="@color/grey_deep" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/immediately_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y40"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y25"
+                android:background="@drawable/shape_round_red_button"
+                android:text="立即投资"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

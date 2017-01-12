@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_red" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y150"
+                android:background="@color/red_light"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recharge_can_use_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:text="充值金额(元)"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y10"
+                android:paddingTop="@dimen/y10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="短信验证码"
+                    android:textColor="@color/font_black" />
+
+                <EditText
+                    android:id="@+id/recharge_min_amount_et"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="0.84"
+                    android:background="@null"
+                    android:inputType="none"
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_get_verifycode"
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/x10"
+                    android:background="@drawable/shape_large_red_white"
+                    android:text="获取验证码"
+                    android:textColor="@color/red_light"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_confirm_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@drawable/shape_round_red_button"
+                android:text="确认充值"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

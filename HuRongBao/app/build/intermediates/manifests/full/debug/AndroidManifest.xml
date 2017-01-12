@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hrb"
+    android:versionCode="8"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.hrb.HuRongBaoApp"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hrb.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hrb.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.init.ActivityRegist"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.init.ActivityLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.photo.ShowBigImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.init.ActivityFindLoginPwd"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.init.ActivityResetLoginPwd"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivitySetHelp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMyInvest"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMyTransfer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityPersonalProfitLoss"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityDealRecord"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityAddBankCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMyBankCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityRecharge"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityWithdraw"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityWithdrawRecord"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityRechargeRecord"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityReturnMoneyPlan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivitySecurityCenter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityLoginPwdChange"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityReturnMoneyDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityOpenAccount"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMessageCenter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMessageWatch"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityIntegral"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityResetTeleNumThree"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityResetTeleNumOne"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityResetTeleNumTwo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMyRedPackage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityMyAddRateCoupon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityTransferedDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityTransferingDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityTransfer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityInviteFriend"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityAwardDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityInviteRecord"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityInvestDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityInvestDetailMore"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityInvestDetailImmediately"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityZqDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityTransferDetailBuy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityTransferRecord"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityInvestVerify"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.finance.ActivityTransferVerify"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.more.ActivityCompanyProfile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.more.ActivityContactUs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.more.ActivityNewsCenter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityRealNameAuth"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改登录密码 -->
+        <activity
+            android:name="com.hrb.ui.init.ActivityWebView"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityRechargeFast"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hrb.ui.account.ActivityRechargeVerify"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1105736817" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hrb.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.hrb.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-Wechat-Favorite-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2dfc7d48951c61423eb6a536e68c36579ad61ec5">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-Wechat-Favorite-2.7.7_1013df1bbdb2845a66858663cbb8737f3de167e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-SinaWeibo-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9d6f84355d4f6252240aebc751ba21eaea07e2dd">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-SinaWeibo-2.7.7_f3da174ed9b085b8353fb40ea456ed2b59945f90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_198a4c8dd7e91f0e3b7af321dd9ed6d1c9336a9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-Wechat-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b97a04213d77372e90bbd280ad2149a0623e4e0b">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-Wechat-2.7.7_d92a31b573d2b6c3c1a710ee42a098f4d090bcc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b44cba5bae8f7cfdaa6788a8d07a048c003ccf93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-ShortMessage-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7b6aec675d61c398cb0690716630e22467cae879">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-ShortMessage-2.7.7_7e655b43da5df001fdb185afc86325b3e77da9e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_0289433556a3df7ffbe980e03f1a3c981e53dad3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_89907b330f56a742e6d08a0e22b6c411f134e629\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_58e23e2ee7dd17b04e46f68500173448d542cdda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\MobTools-2016.0830.1940.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="210bf77409df74387b9df1d7987de310a2e0b145">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\MobTools-2016.0830.1940_aec2a376a66022fea9238d0e8da9d1d835090aaa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-Wechat-Moments-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1029839bf5cfc4522366b1fc17eb30627fa5b431">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-Wechat-Moments-2.7.7_80300dcb6697ef9348785f464838585aab07213d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d9acf46c7d77fc70278fcbb4cc5bdbab3ee3297d">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5b0dee12e466d27585092f2f020ee133f4b66a8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_8e2f196053e9fe0b72f6121c352fef9564564976\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_660a2e072ef28d49ce708ccae120479a8e2fb0a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="224c93f1824fa17b96db7250c2e5e2703d45e052">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-3.0.0-jar-with-dependencies_f0cdd7c36b443c573a3398000d503e7c78f147a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_8affe741b8ff23d8d2d3b7b1867c27a31846efc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_542c04cec7892660c9cbe3112244132e386ae4d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudio\SDK\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_72d3e470e32643d4b93719ed5a614386cf4489dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_123387a81812eaf3ae9c9654f8b51f6f261965af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_cec531399d905617fb07fcbb1b52fbc008ec7472\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b330227d747a7b375bda40262316af92e77ac3e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_cf948b0a8b4150927131b59787c19fe0b3325fc9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_c54f93d2106aa5315fc83388d54d65c8920805a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-QQ-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5b1593b719931c6c1902ab80998b7fb5cf73e488">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-QQ-2.7.7_aca51d8069c46ad1a6c8e8dadbaa3c6482a0e6f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="63f6da3458f9eda296c264f22f341a7a9dbf21e1">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d19cd79d33e0c91d9e2d248e111ad89d331d5d2c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_163d530feedede44880b0294034e27291b4adce3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-QZone-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="558713df8d3cc7543375e51e63a0638aeb0e2e9f">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-QZone-2.7.7_402c0df6443fc34ba3c409cc7f23b939881bcba4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-TencentWeibo-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="40eed754fe184a04a0adbe9157e8772a0ff301ef">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-TencentWeibo-2.7.7_fb3127bcf7db5aa167a67ccbc4b51e2e315f16bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-Core-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b060c818956585ebc16be9c034ba4970e5552d25">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-Core-2.7.7_01e7b5401abc9f43c51dca4a8777799d5e9eb028\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_95a959b2b3fb05ec96efba2895c862c67a109647\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_2b5b8c068b868b7bd94cb8c948541b81399064d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\MobCommons-2016.0830.1940.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ca36dc249a46648f8c8f53ad5ee4a935e80956a8">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\MobCommons-2016.0830.1940_b7955e7292c5d62ae828199fa7a0cac13f7d4060\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\universal-image-loader-1.9.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="296dfb44fbf31397c0306e60cb62e06ca40df07f">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.1_109bd9e30e66c46de0238dea4e63bbf91e0e9bac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_539b43318ef7cc5e21f36f77876e0b67b2c49dd9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudio\androidstudio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_6cae000db6d8659de8d0f1ee47c2ba0549b84502\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\libs\ShareSDK-Wechat-Core-2.7.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7942d022e2d3d8ed7ccbaf17df22da2eeddddfff">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\ShareSDK-Wechat-Core-2.7.7_646d251d926e4bab94d7d34693e43ecbfbf2cced\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="E:\Demo\project\02_develop\Mobile\01_src\E127_hurongbao\Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_b644143cd3dc224ad0b509f07380ba0a33c68ef5\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_black"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_deep" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y75"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y10">
+
+        <ImageView
+            android:id="@+id/bank_card_iv"
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/y75"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bank_zhao_shang" />
+
+        <TextView
+            android:id="@+id/bank_card_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x70"
+            android:text="**** **** **** 8989"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

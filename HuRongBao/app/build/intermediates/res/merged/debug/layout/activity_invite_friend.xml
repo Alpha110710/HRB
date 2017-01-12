@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y110"
+            android:background="@color/red_light" />
+
+        <FrameLayout
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x150"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/y80"
+            android:background="@drawable/invite_friend_04">
+
+            <com.hrb.ui.widget.WaterView
+                android:id="@+id/waterview"
+                android:layout_width="@dimen/x140"
+                android:layout_height="@dimen/x140"
+                android:layout_gravity="center"
+                app:waterview_amplitude="40"
+                app:waterview_frame_color="#44FE6062"
+                app:waterview_frame_width="0dp"
+                app:waterview_offset_increment_value="0.2"
+                app:waterview_paint_color_first="#44FFFFFF"
+                app:waterview_paint_color_second="#44FFFFFF"
+                app:waterview_sleep_time="100"
+                app:waterview_up_velocity="6" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请奖励(元)"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/invite_award_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y5"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y13"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y13"
+            android:layout_weight="1"
+            android:text="邀请人数"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:id="@+id/invite_people_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y13"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/y13"
+            android:text=""
+            android:textColor="@color/font_gray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y10"
+        android:text="分享链接邀请好友"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/y20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/invite_weixin_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/my_invite_friend_03" />
+
+        <ImageView
+            android:id="@+id/invite_sinna_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/my_invite_friend_05" />
+
+        <ImageView
+            android:id="@+id/invite_friend_round_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/my_invite_friend_07" />
+
+        <ImageView
+            android:id="@+id/invite_qq_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/my_invite_friend_10" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_deep" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="个人信息"
+        android:textColor="@color/red_light" />
+
+    <LinearLayout
+        android:id="@+id/security_center_phone_num_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y15"
+        android:paddingTop="@dimen/y15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="手机号码"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:id="@+id/security_center_phone_num_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:text="13654988689"
+            android:textColor="@color/font_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textColor="@color/font_gray" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/security_center_id_card_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y15"
+        android:paddingTop="@dimen/y15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="证件信息"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:id="@+id/security_center_id_card_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="220421*******2122"
+            android:textColor="@color/font_gray" />
+
+        <TextView
+            android:id="@+id/security_center_id_card_mark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center_vertical"
+            android:text="已认证"
+            android:textColor="@color/font_gray" />
+
+        <ImageView
+            android:id="@+id/security_center_id_card_mark_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/auto_bidding_03"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/security_center_trust_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y10"
+        android:paddingTop="@dimen/y10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="托管账户"
+            android:textColor="@color/font_black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/security_center_trust_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="协议号"
+                android:textColor="@color/font_gray" />
+
+            <TextView
+                android:id="@+id/security_center_trust_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="13311333311"
+                android:textColor="@color/font_gray" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/security_center_trust_mark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center_vertical"
+            android:text="已绑定"
+            android:textColor="@color/font_gray" />
+
+        <ImageView
+            android:id="@+id/security_center_trust_mark_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/auto_bidding_03"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="安全信息"
+        android:textColor="@color/red_light" />
+
+    <LinearLayout
+        android:id="@+id/security_center_login_pwd_change_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y15"
+        android:paddingTop="@dimen/y15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="登录密码"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/font_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textColor="@color/font_gray" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/security_center_deal_pwd_reset_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y15"
+        android:paddingTop="@dimen/y15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="交易密码"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/font_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/auto_bidding_03"
+            android:gravity="center_vertical"
+            android:text="重置"
+            android:textColor="@color/font_gray" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

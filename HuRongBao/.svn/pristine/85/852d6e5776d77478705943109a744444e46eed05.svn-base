@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	 <string-array name="month">
+        <item>1个月</item>
+       <item>2个月</item>
+       <item>3个月</item>
+       <item>4个月</item>
+       <item>5个月</item>
+       <item>6个月</item>
+       <item>7个月</item>
+       <item>8个月</item>
+       <item>9个月</item>
+       <item>10个月</item>
+       <item>11个月</item>
+       <item>12个月</item>
+       <item>13个月</item>
+       <item>14个月</item>
+       <item>15个月</item>
+       <item>16个月</item>
+       <item>17个月</item>
+       <item>18个月</item>
+       <item>19个月</item>
+       <item>20个月</item>
+       <item>21个月</item>
+       <item>22个月</item>
+       <item>23个月</item>
+       <item>24个月</item>
+    </string-array>
+   <string-array 
+       name="rate">
+       <item>1%</item>
+       <item>2%</item>
+       <item>3%</item>
+       <item>4%</item>
+       <item>5%</item>
+       <item>6%</item>
+       <item>7%</item>
+       <item>8%</item>
+       <item>9%</item>
+       <item>10%</item>
+       <item>11%</item>
+       <item>12%</item>
+       <item>13%</item>
+       <item>14%</item>
+       <item>15%</item>
+       <item>16%</item>
+       <item>17%</item>
+       <item>18%</item>
+       <item>19%</item>
+       <item>20%</item>
+       <item>21%</item>
+       <item>22%</item>
+       <item>23%</item>
+       <item>24%</item>
+   </string-array>
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+</resources>

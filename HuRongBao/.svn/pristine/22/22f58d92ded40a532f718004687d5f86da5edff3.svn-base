@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_red_packet_06"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_red_unused_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/y25"
+                android:text="仅限新手标使用"
+                android:textColor="@color/red_light"
+                android:textSize="12sp"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/y3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_item_red_unused_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.2"
+                    android:textColor="@color/red_deep"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_red_unused_amount_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/red_deep" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_red_unused_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginTop="@dimen/y25"
+                android:text="注册奖励" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grey_deep" />
+
+            <TextView
+                android:id="@+id/tv_item_red_unused_min_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginTop="@dimen/y5"
+                android:layout_weight="1"
+                android:text="投资10000元可用" />
+
+            <TextView
+                android:id="@+id/tv_item_red_unused_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginRight="@dimen/x30"
+                android:text="2016-07-65到期" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

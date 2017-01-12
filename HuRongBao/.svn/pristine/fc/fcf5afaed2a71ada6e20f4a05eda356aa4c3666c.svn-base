@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">虎融宝</string>
+    <string name="double_tap_to_exit">再按一次退出程序</string>
+    <string name="msg_opreation_timeout">与服务器连接超时，请稍后重试</string>
+    <string name="network_not_available">无法连接到网络，请检查网络配置</string>
+    <string name="auth_expire">您的用户授权已过期，请重新登录</string>
+    <string name="opreation_failure">服务器访问异常，请稍后重试</string>
+    <string name="find_getverifycode">获取验证码</string>
+    <string name="msg_new_phone_num_empty">请输入新手机号码</string>
+    <string name="msg_verify_code_empty">请输入验证码</string>
+    <string name="msg_old_login_pwd_empty">请输入原登录密码</string>
+    <string name="msg_new_login_pwd_empty">请输入新登录密码</string>
+    <string name="msg_repeat_new_login_pwd_empty">请再次输入新登录密码</string>
+    <string name="msg_different_new_login_pwd">两次输入的密码不一致，请重新输入</string>
+    <string name="msg_old_pay_pwd_empty">请输入原交易密码</string>
+    <string name="msg_new_pay_pwd_empty">请输入新交易密码</string>
+    <string name="msg_repeat_new_payment_pwd_empty">请再次输入新交易密码</string>
+    <string name="msg_getcash_input_money">请输入提现金额</string>
+    <string name="msg_getcash_input_pwd">请输入交易密码</string>
+    <string name="msg_charge_input_money">请输入大于50的金额</string>
+    <string name="msg_phone_number">请输入您的手机号码</string>
+     
+
+    <string name="plat_intro">&#160;&#160;&#160;&#160;虎融宝（www.0080.cn）,2016年11月正式上线，注册资本5000万元，由南京虎融宝金融信息服务有限公司创立，是江苏国变电气股份有限公司（新三板代码：835192）旗下全资独立子公司。虎融宝作为工业金融的先驱代表，深耕互联网金融行业细分领域，创造性提出“工业电气生态金融”的运营理念，在数据挖掘、建模、分析、风控、全场景产品规划方面实现创新和突破，为工业电气中小微企业、众多合作机构搭建投融资桥梁，提供金融资产交易服务，推动中国工业电气行业整体发展和互联网生态金融的创新和发展。</string>
+     <string name="msg_pwd_pattern_check">密码是6-20个字符（字母、数字、符号的组合），不能单独使用字母、数字或符号!</string>
+    <string name="msg_password_length_check">密码长度必须是6-20位</string>
+    
+    
+   <!-- 分享字串 --> 
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="share_failed">分享失败</string>
+    
+    
+     <string name="log_out">退出登录</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    
+     <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+    
+    
+    <string name="new_version_detected">检测到新版本 </string>
+    <string name="download_background">后台下载</string>
+    <string name="remind_me_later">下次再说</string>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    
+</resources>

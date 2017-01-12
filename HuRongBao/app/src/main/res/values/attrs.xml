@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    	属性详情参考
+    	http://www.tuicool.com/articles/yUvyEz
+
+
+
+
+    -->
+    <declare-styleable name="HeaderBar">
+        <attr name="leftBtnWidth" format="dimension" />
+        <attr name="leftBtnHeight" format="dimension" />
+        <attr name="leftBtnBackground" format="reference" />
+        <attr name="leftBtnText" format="string|reference" />
+        <attr name="leftBtnTextSize" format="dimension" />
+        <attr name="leftBtnTextColor" format="integer|color" />
+        <attr name="leftBtnNotVisible" format="boolean" />
+        <attr name="leftBtnLeftMargin" format="dimension" />
+        <attr name="rightBtnWidth" format="dimension" />
+        <attr name="rightBtnHeight" format="dimension" />
+        <attr name="rightBtnBackground" format="reference" />
+        <attr name="rightBtnText" format="string|reference" />
+        <attr name="rightBtnTextSize" format="dimension" />
+        <attr name="rightBtnTextColor" format="integer|color" />
+        <attr name="rightBtnNotVisible" format="boolean" />
+        <attr name="rightBtnRightMargin" format="dimension" />
+        <attr name="centerText" format="string" />
+        <attr name="centerTextBackground" format="reference" />
+        <attr name="centerTextSize" format="dimension" />
+        <attr name="centerTextColor" format="integer|color|reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="auto3d">
+        <attr name="autoTextSize" format="dimension" />
+        <attr name="autoTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!--两只画笔的颜色-->
+    <attr name="waterview_paint_color_first" format="color" />
+    <attr name="waterview_paint_color_second" format="color" />
+
+    <!--振幅-->
+    <attr name="waterview_amplitude" format="integer" />
+
+
+    <attr name="waterview_offset_increment_value" format="float" />
+    <attr name="waterview_up_velocity" format="integer" />
+    <attr name="waterview_sleep_time" format="integer" />
+    <!--边框宽度颜色-->
+    <attr name="waterview_frame_width" format="dimension" />
+    <attr name="waterview_frame_color" format="color" />
+
+    <declare-styleable name="WaterView">
+        <attr name="waterview_paint_color_first" />
+        <attr name="waterview_paint_color_second" />
+        <attr name="waterview_amplitude" />
+        <attr name="waterview_offset_increment_value" />
+        <attr name="waterview_up_velocity" />
+        <attr name="waterview_sleep_time" />
+        <attr name="waterview_frame_width" />
+        <attr name="waterview_frame_color" />
+    </declare-styleable>
+
+    <!--WaveView-->
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color"/>
+        <attr name="blow_wave_color" format="color"/>
+        <attr name="progress" format="integer"/>
+        <attr name="mHeight" format="integer"/>
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+
+
+</resources>

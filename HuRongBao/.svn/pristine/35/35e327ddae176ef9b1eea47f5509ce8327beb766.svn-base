@@ -1,0 +1,630 @@
+package com.hrb.ui.finance;
+
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.annotation.Nullable;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.PopupWindow;
+import android.widget.TextView;
+
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
+import com.hrb.ExtraConfig;
+import com.hrb.HuRongBaoApp;
+import com.hrb.R;
+import com.hrb.biz.FinanceBiz;
+import com.hrb.biz.exception.BizFailure;
+import com.hrb.biz.exception.ZYException;
+import com.hrb.biz.task.BizDataAsyncTask;
+import com.hrb.model.InvestListModel;
+import com.hrb.ui.base.BaseFragment;
+import com.hrb.ui.widget.CircleProgressBar;
+import com.hrb.utils.java.AlertUtil;
+import com.hrb.utils.java.StringUtil;
+
+import org.apache.http.ParseException;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import static com.hrb.R.id.plist_invest_topic;
+
+/**
+ * Created by Ls on 2016/10/12.
+ */
+
+public class FragmentInvestTopic extends BaseFragment implements View.OnClickListener {
+
+    private PullToRefreshListView pullToRefreshListView;
+    private InvestTopicListAdapter adapter;
+
+    private TextView invest_topic_default_tv;
+    private ImageView invest_topic_rate_iv;
+    private TextView invest_topic_rate_tv;
+    private TextView invest_topic_status_tv;
+    private ImageView invest_topic_term_iv;
+    private TextView invest_topic_term_tv;
+
+    private int rate = 0;
+    private int term = 0;
+
+    private TextView tv;
+    private int pageIndex = 0;
+    private String status = "", rateFlg = "", perFlg = "";
+
+    //popup
+    PopupWindow pw;
+    TextView popup_select_all_tv;
+    TextView popup_select_bidding_tv;
+    TextView popup_select_order_tv;
+    TextView popup_select_return_tv;
+    ImageView popup_select_all_iv;
+    ImageView popup_select_bidding_iv;
+    ImageView popup_select_order_iv;
+    ImageView popup_select_return_iv;
+
+
+    Handler handler = new Handler() {
+        public void handleMessage(android.os.Message msg) {
+            switch (msg.what) {
+                case 1:
+                    adapter.editList();
+                    break;
+            }
+        }
+
+        ;
+    };
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_invest_topic, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        pullToRefreshListView = (PullToRefreshListView) view.findViewById(plist_invest_topic);
+        invest_topic_default_tv = (TextView) view.findViewById(R.id.invest_topic_default_tv);
+        invest_topic_rate_iv = (ImageView) view.findViewById(R.id.invest_topic_rate_iv);
+        invest_topic_rate_tv = (TextView) view.findViewById(R.id.invest_topic_rate_tv);
+        invest_topic_status_tv = (TextView) view.findViewById(R.id.invest_topic_status_tv);
+        invest_topic_term_iv = (ImageView) view.findViewById(R.id.invest_topic_term_iv);
+        invest_topic_term_tv = (TextView) view.findViewById(R.id.invest_topic_term_tv);
+        view.findViewById(R.id.invest_topic_term_ll).setOnClickListener(this);
+        view.findViewById(R.id.invest_topic_rate_ll).setOnClickListener(this);
+
+
+        invest_topic_default_tv.setOnClickListener(this);
+//        invest_topic_rate_tv.setOnClickListener(this);
+        invest_topic_status_tv.setOnClickListener(this);
+//        invest_topic_term_tv.setOnClickListener(this);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        adapter = new InvestTopicListAdapter(getActivity());
+        pullToRefreshListView.setMode(PullToRefreshBase.Mode.BOTH);
+        pullToRefreshListView.getRefreshableView().setAdapter(adapter);
+        initData();
+        initPopup();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (HuRongBaoApp.globalIndex == 1) {
+            handler.removeMessages(1);// 必须添加不然viewpager来回滑动的时候倒计时时间混乱
+            handler.sendEmptyMessageDelayed(1, 1000);
+//        }
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        handler.removeMessages(1);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.invest_topic_default_tv:
+                term = 0;
+                rate = 0;
+                invest_topic_rate_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_moren));
+                invest_topic_term_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_moren));
+                setVisible(0);
+                status = "";
+                rateFlg = "";
+                perFlg = "";
+                initHoldingList(true, true, status, rateFlg, perFlg);
+
+                break;
+            case R.id.invest_topic_rate_ll:
+                switch (rate) {
+                    case 0:
+                        //默认排序 点击后是从小到大排序
+                        invest_topic_rate_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_up));
+                        rate = -1;
+                        rateFlg = "1";
+                        initHoldingList(true, true, status, rateFlg, perFlg);
+                        break;
+                    case -1:
+                        //从小到大排序 点击后是从大到小排序
+                        invest_topic_rate_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_down));
+                        rate = 1;
+                        rateFlg = "2";
+                        initHoldingList(true, true, status, rateFlg, perFlg);
+                        break;
+                    case 1:
+                        //从大到小排序 点击后是从小到大排序
+                        invest_topic_rate_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_up));
+                        rate = -1;
+                        rateFlg = "1";
+                        initHoldingList(true, true, status, rateFlg, perFlg);
+                        break;
+                }
+
+                break;
+            case R.id.invest_topic_status_tv:
+                //状态
+                pw.showAsDropDown(invest_topic_default_tv, 0, 0);
+                break;
+            case R.id.invest_topic_term_ll:
+                switch (term) {
+                    case 0:
+                        //默认排序 点击后是从小到大排序
+                        invest_topic_term_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_up));
+                        term = -1;
+                        perFlg = "1";
+                        initHoldingList(true, true, status, rateFlg, perFlg);
+                        break;
+                    case -1:
+                        //从小到大排序 点击后是从大到小排序
+                        invest_topic_term_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_down));
+                        term = 1;
+                        perFlg = "2";
+                        initHoldingList(true, true, status, rateFlg, perFlg);
+                        break;
+                    case 1:
+                        //从大到小排序 点击后是从小到大排序
+                        invest_topic_term_iv.setImageDrawable(getResources().getDrawable(R.drawable.invest_list_up));
+                        term = -1;
+                        perFlg = "1";
+                        initHoldingList(true, true, status, rateFlg, perFlg);
+                        break;
+                }
+                break;
+
+            case R.id.popup_select_translucence_tv:
+                //透明部分:
+                pw.dismiss();
+                break;
+            case R.id.popup_select_all_ll:
+                //全部
+                setVisible(0);
+                status = "";
+                initHoldingList(true, true, status, rateFlg, perFlg);
+                pw.dismiss();
+                break;
+            case R.id.popup_select_bidding_ll:
+                //投标中
+                setVisible(1);
+                status = "1";
+                initHoldingList(true, true, status, rateFlg, perFlg);
+                pw.dismiss();
+
+                break;
+            case R.id.popup_select_order_ll:
+                //预约中
+                setVisible(2);
+                status = "3";
+                initHoldingList(true, true, status, rateFlg, perFlg);
+                pw.dismiss();
+                break;
+            case R.id.popup_select_return_ll:
+                //还款中
+                setVisible(3);
+                status = "2";
+                initHoldingList(true, true, status, rateFlg, perFlg);
+                pw.dismiss();
+                break;
+        }
+    }
+
+
+    //设置可见不可见
+    private void setVisible(int pos) {
+        ArrayList<TextView> textViews = new ArrayList<>();
+        textViews.add(popup_select_all_tv);
+        textViews.add(popup_select_bidding_tv);
+        textViews.add(popup_select_order_tv);
+        textViews.add(popup_select_return_tv);
+        ArrayList<ImageView> imageViews = new ArrayList<>();
+        imageViews.add(popup_select_all_iv);
+        imageViews.add(popup_select_bidding_iv);
+        imageViews.add(popup_select_order_iv);
+        imageViews.add(popup_select_return_iv);
+
+        for (int i = 0; i < textViews.size(); i++) {
+            if (pos == i) {
+                textViews.get(i).setTextColor(0xFFFF5A5C);
+                imageViews.get(i).setVisibility(View.VISIBLE);
+
+            } else {
+                textViews.get(i).setTextColor(0xFF333333);
+                imageViews.get(i).setVisibility(View.INVISIBLE);
+            }
+        }
+    }
+
+    /**
+     * 状态筛选 popupwindow
+     */
+
+    private void initPopup() {
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.popup_select, null);
+        pw = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        view.findViewById(R.id.popup_select_all_ll).setOnClickListener(this);
+        view.findViewById(R.id.popup_select_bidding_ll).setOnClickListener(this);
+        view.findViewById(R.id.popup_select_order_ll).setOnClickListener(this);
+        view.findViewById(R.id.popup_select_return_ll).setOnClickListener(this);
+        view.findViewById(R.id.popup_select_translucence_tv).setOnClickListener(this);
+
+        popup_select_all_tv = (TextView) view.findViewById(R.id.popup_select_all_tv);
+        popup_select_bidding_tv = (TextView) view.findViewById(R.id.popup_select_bidding_tv);
+        popup_select_order_tv = (TextView) view.findViewById(R.id.popup_select_order_tv);
+        popup_select_return_tv = (TextView) view.findViewById(R.id.popup_select_return_tv);
+
+        popup_select_all_iv = (ImageView) view.findViewById(R.id.popup_select_all_iv);
+        popup_select_bidding_iv = (ImageView) view.findViewById(R.id.popup_select_bidding_iv);
+        popup_select_order_iv = (ImageView) view.findViewById(R.id.popup_select_order_iv);
+        popup_select_return_iv = (ImageView) view.findViewById(R.id.popup_select_return_iv);
+
+        pw.setFocusable(true);
+        pw.setBackgroundDrawable(new ColorDrawable(0x00FFFFFF));
+        pw.setAnimationStyle(R.style.anim_home_share_popup);
+    }
+
+
+    private void initData() {
+
+        pullToRefreshListView.getRefreshableView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (adapter.getList().get(position - 1).getOID_PLATFORM_PRODUCTS_ID() == null) {
+                    return;
+                }
+                Intent intent = new Intent(getActivity(), ActivityInvestDetail.class);
+                intent.putExtra(ExtraConfig.IntentExtraKey.PRODUCT_ID, adapter.getList().get(position - 1).getOID_PLATFORM_PRODUCTS_ID());
+                startActivity(intent);
+            }
+        });
+        pullToRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+
+            @Override
+            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+                initHoldingList(false, true, status, rateFlg, perFlg);
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
+                initHoldingList(false, false, status, rateFlg, perFlg);
+            }
+        });
+
+        tv = new TextView(getActivity());
+        tv.setGravity(Gravity.CENTER);
+        tv.setText("暂无数据");
+        initHoldingList(true, true, status, rateFlg, perFlg);
+    }
+
+    private boolean end = false;
+
+    public void initHoldingList(final boolean first, final boolean isPullDown,
+                                final String status, final String rateFlg, final String perFlg) {
+        BizDataAsyncTask<List<InvestListModel>> getHoldingList = new BizDataAsyncTask<List<InvestListModel>>(getWaitingView()) {
+
+            @Override
+            protected List<InvestListModel> doExecute() throws ZYException, BizFailure {
+                if (isPullDown) {
+
+                    return FinanceBiz.getInvestmentList(0 + "", ExtraConfig.DEFAULT_PAGE_COUNT + "", status, rateFlg, perFlg);
+                } else {
+                    if (end) {
+                        return new ArrayList<>();
+                    } else {
+                        return FinanceBiz.getInvestmentList(pageIndex + "", ExtraConfig.DEFAULT_PAGE_COUNT + "", status, rateFlg, perFlg);
+                    }
+                }
+            }
+
+            @SuppressWarnings("deprecation")
+            @Override
+            protected void onExecuteSucceeded(List<InvestListModel> result) {
+
+                if (result.size() < ExtraConfig.DEFAULT_PAGE_COUNT) {
+
+                    end = true;
+                    if (isPullDown && result.size() == 0) {
+                        pullToRefreshListView.setEmptyView(tv);
+                    }
+                    pullToRefreshListView.setPullLabel("没有更多数据", PullToRefreshBase.Mode.PULL_FROM_END);
+                    pullToRefreshListView.setReleaseLabel("没有更多数据", PullToRefreshBase.Mode.PULL_FROM_END);
+                    pullToRefreshListView.setRefreshingLabel("没有更多数据", PullToRefreshBase.Mode.PULL_FROM_END);
+                } else {
+                    end = false;
+                    pullToRefreshListView.setPullLabel("上拉刷新", PullToRefreshBase.Mode.PULL_FROM_END);
+                    pullToRefreshListView.setReleaseLabel("放开以刷新", PullToRefreshBase.Mode.PULL_FROM_END);
+                    pullToRefreshListView.setRefreshingLabel("正在载入", PullToRefreshBase.Mode.PULL_FROM_END);
+                }
+
+                if (isPullDown) {
+                    pageIndex = 0;
+                    adapter.removeAll();
+                }
+                pageIndex++;
+
+                for (int i = 0; i < result.size(); i++) {
+                    adapter.addItem(result.get(i));
+                }
+                adapter.notifyDataSetChanged();
+
+                pullToRefreshListView.onRefreshComplete();
+
+            }
+
+            @Override
+            protected void OnExecuteFailed(String error) {
+                pullToRefreshListView.onRefreshComplete();
+                if (!StringUtil.isEmpty(error)) {
+                    AlertUtil.t(getActivity(), error);
+                }
+            }
+        };
+        if (first) {
+            getHoldingList.setWaitingView(getWaitingView());
+        }
+        getHoldingList.execute();
+
+    }
+
+
+    private String getDistanceTime(long diff) {
+        long day = 0;
+        long hour = 0;
+        long min = 0;
+        long sec = 0;
+
+        //day = diff / (24 * 60 * 60 * 1000);
+        hour = (diff / (60 * 60 * 1000));
+        min = ((diff / (60 * 1000)) - hour * 60);
+        sec = (diff / 1000 - hour * 60 * 60 - min * 60);
+       /* if(day!=0)return day+"天"+flag;
+        if(hour!=0)return hour+"小时"+flag;
+        if(min!=0)return min+"分钟"+flag;*/
+        return hour + ":" + min + ":" + sec;
+    }
+
+
+    // 时间相减返回差值
+    private String getData(String begin, String end) {
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String data = "";
+        try {
+            Date d1 = df.parse(end);
+            Date d2 = df.parse(begin);
+            long diff = d1.getTime() - d2.getTime();// 这样得到的差值是微秒级别
+            data = getDistanceTime(diff);
+
+		/*	Date date = new Date(diff);
+            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+			// 进行格式化
+			data = sdf.format(date);*/
+        } catch (Exception e) {
+        }
+        return data;
+    }
+
+    // 将String类型的时间加以秒
+    private String getDateUp(String end) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = null;
+        try {
+            date = sdf.parse(end);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return end;
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
+        }
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.setTimeInMillis(calendar.getTimeInMillis() - 1);
+        // calendar.add (Calendar.SECOND, 1);
+        return sdf.format(calendar.getTime());
+    }
+
+
+    public class InvestTopicListAdapter extends BaseAdapter {
+
+        private Context context;
+        private List<InvestListModel> list = new ArrayList<>();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date curDate = new Date(System.currentTimeMillis());
+        // String curTime = format.format(curDate);
+//        String curTime = list.get(0).getCurrentTime();
+
+
+        public InvestTopicListAdapter(Context context) {
+            this.context = context;
+        }
+
+        public List<InvestListModel> getList() {
+            return list;
+        }
+
+        // 添加数据
+        public void addItem(InvestListModel investmentModel) {
+            list.add(investmentModel);
+        }
+
+        public void editList() {
+            for (int i = 0; i < list.size(); i++) {
+                if ("等待开始".equals(list.get(i).getBORROW_STATUS())) {// 显示倒计时
+                    if (list.get(i).getFINANCE_START_DATE().equals(list.get(i).getCurrentTime()))
+                        list.get(i).setFINANCE_START_DATE(list.get(i).getCurrentTime());
+                    else
+                        list.get(i).setFINANCE_START_DATE(getDateUp(list.get(i).getFINANCE_START_DATE()));
+                }
+            }
+            notifyDataSetChanged();
+            handler.sendEmptyMessageDelayed(1, 1000);
+        }
+
+        // 移除所有数据
+        public void removeAll() {
+            if (list != null && list.size() > 0) {
+                for (int i = list.size() - 1; i >= 0; i--) {
+                    list.remove(i);
+                }
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return list == null ? 0 : list.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            InvestTopicListViewHolder viewHolder = null;
+            if (convertView == null) {
+                convertView = LayoutInflater.from(context).inflate(R.layout.item_invest_topic, parent, false);
+                viewHolder = new InvestTopicListViewHolder(convertView);
+                convertView.setTag(viewHolder);
+            } else {
+                viewHolder = (InvestTopicListViewHolder) convertView.getTag();
+            }
+
+            viewHolder.item_invest_topic_title_tv.setText(list.get(position).getPRODUCTS_TITLE());
+            viewHolder.item_invest_topic_year_profit_tv.setText(list.get(position).getFINANCE_INTEREST_RATE());
+            viewHolder.item_invest_topic_loan_time_tv.setText(list.get(position).getFINANCE_PERIOD());
+            viewHolder.item_invest_topic_loan_time_unit_tv.setText(list.get(position).getINTEREST_RATE_TYPE());
+            viewHolder.item_invest_topic_pb.setText(list.get(position).getFINANCE_AMOUNT_SCALE() + "%");
+            viewHolder.item_invest_topic__loan_amount_tv.setText(list.get(position).getFINANCE_AMOUNT());
+            viewHolder.item_invest_topic_loan_amount_unit_tv.setText(list.get(position).getFINANCE_AMOUNT_UNIT());
+
+            if ("等待开始".equals(list.get(position).getBORROW_STATUS())) {// 显示倒计时
+                viewHolder.item_invest_topic_pb.setVisibility(View.GONE);
+                viewHolder.item_invest_topic_count_down_ll.setVisibility(View.VISIBLE);
+                viewHolder.item_invest_topic_had_payment_iv.setVisibility(View.GONE);
+                viewHolder.item_invest_topic_count_down_tv.setText(getData(list.get(position).getCurrentTime(),
+                        list.get(position).getFINANCE_START_DATE()));
+
+            } else if ("立即投资".equals(list.get(position).getBORROW_STATUS())) {// 显示投资进度
+                viewHolder.item_invest_topic_pb.setVisibility(View.VISIBLE);
+                viewHolder.item_invest_topic_count_down_ll.setVisibility(View.GONE);
+                viewHolder.item_invest_topic_had_payment_iv.setVisibility(View.GONE);
+                viewHolder.item_invest_topic_pb
+                        .setProgress(Float.parseFloat(list.get(position).getFINANCE_AMOUNT_SCALE()));
+            } else {// 根据状态值显示不同图片
+                viewHolder.item_invest_topic_pb.setVisibility(View.GONE);
+                viewHolder.item_invest_topic_count_down_ll.setVisibility(View.GONE);
+                viewHolder.item_invest_topic_had_payment_iv.setVisibility(View.VISIBLE);
+                if ("满标待审".equals(list.get(position).getBORROW_STATUS()))
+                    viewHolder.item_invest_topic_had_payment_iv.setImageResource(R.drawable.invest_list6_03);
+                else if ("还款中".equals(list.get(position).getBORROW_STATUS()))
+                    viewHolder.item_invest_topic_had_payment_iv.setImageResource(R.drawable.invest_list4_03);
+                else if ("借款失败".equals(list.get(position).getBORROW_STATUS()))
+                    viewHolder.item_invest_topic_had_payment_iv.setImageResource(R.drawable.invest_list1_03);
+                else if ("流标待审".equals(list.get(position).getBORROW_STATUS()))
+                    viewHolder.item_invest_topic_had_payment_iv.setImageResource(R.drawable.invest_list2_03);
+                else if ("已满标".equals(list.get(position).getBORROW_STATUS()))
+                    viewHolder.item_invest_topic_had_payment_iv.setImageResource(R.drawable.invest_list3_03);
+                else if ("已完成".equals(list.get(position).getBORROW_STATUS()))
+                    viewHolder.item_invest_topic_had_payment_iv.setImageResource(R.drawable.invest_list5_03);
+
+            }
+
+            //设置新手标  体验标图片
+            if (list.get(position).getNOVICE_FLG().equals("1")) {
+                viewHolder.item_invest_iv.setImageResource(R.drawable.invest_list_07);
+                viewHolder.item_invest_iv.setVisibility(View.VISIBLE);
+            } else if (list.get(position).getEXP_FLG().equals("1")) {
+                viewHolder.item_invest_iv.setImageResource(R.drawable.invest_list_10);
+                viewHolder.item_invest_iv.setVisibility(View.VISIBLE);
+            } else {
+                viewHolder.item_invest_iv.setVisibility(View.INVISIBLE);
+            }
+            return convertView;
+        }
+
+        public class InvestTopicListViewHolder {
+
+            private final TextView item_invest_topic_loan_time_unit_tv;
+            private final ImageView item_invest_iv;
+            private final ImageView item_invest_topic_had_payment_iv;
+            private final LinearLayout item_invest_topic_count_down_ll;
+            private final TextView item_invest_topic_count_down_tv;
+            TextView item_invest_topic_loan_time_tv;
+            CircleProgressBar item_invest_topic_pb;
+            TextView item_invest_topic_title_tv;
+            TextView item_invest_topic_year_profit_tv;
+            TextView item_invest_topic__loan_amount_tv;
+            TextView item_invest_topic_loan_amount_unit_tv;
+
+            public InvestTopicListViewHolder(View itemView) {
+
+                item_invest_topic_loan_time_tv = (TextView) itemView.findViewById(R.id.item_invest_topic_loan_time_tv);
+                item_invest_topic_loan_time_unit_tv = (TextView) itemView.findViewById(R.id.item_invest_topic_loan_time_unit_tv);
+                item_invest_topic_pb = (CircleProgressBar) itemView.findViewById(R.id.item_invest_topic_pb);
+                item_invest_topic_title_tv = (TextView) itemView.findViewById(R.id.item_invest_topic_title_tv);
+                item_invest_iv = (ImageView) itemView.findViewById(R.id.item_invest_iv);
+                item_invest_topic_had_payment_iv = (ImageView) itemView.findViewById(R.id.item_invest_topic_had_payment_iv);
+                item_invest_topic_year_profit_tv = (TextView) itemView.findViewById(R.id.item_invest_topic_year_profit_tv);
+                item_invest_topic_count_down_ll = (LinearLayout) itemView.findViewById(R.id.item_invest_topic_count_down_ll);
+                item_invest_topic_count_down_tv = (TextView) itemView.findViewById(R.id.item_invest_topic_count_down_tv);
+                item_invest_topic__loan_amount_tv = (TextView) itemView.findViewById(R.id.item_invest_topic__loan_amount_tv);
+                item_invest_topic_loan_amount_unit_tv = (TextView) itemView.findViewById(R.id.item_invest_topic_loan_amount_unit_tv);
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_radio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_deep" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y5">
+
+        <RadioButton
+            android:id="@+id/radiobutton_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="@dimen/y2"
+            android:drawableTop="@drawable/selector_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/y8"
+            android:text="首页"
+            android:textColor="@color/color_text_radiobutton"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_finance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawablePadding="@dimen/y2"
+            android:drawableTop="@drawable/selector_finance"
+            android:gravity="center"
+            android:paddingTop="@dimen/y8"
+            android:text="理财"
+            android:textColor="@color/color_text_radiobutton"
+            android:textSize="12sp" />
+
+
+        <RadioButton
+            android:id="@+id/radiobutton_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawablePadding="@dimen/y2"
+            android:drawableTop="@drawable/selector_account"
+            android:gravity="center"
+            android:paddingTop="@dimen/y8"
+            android:text="我的"
+            android:textColor="@color/color_text_radiobutton"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawablePadding="@dimen/y2"
+            android:drawableTop="@drawable/selector_more"
+            android:gravity="center"
+            android:paddingTop="@dimen/y8"
+            android:text="更多"
+            android:textColor="@color/color_text_radiobutton"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>

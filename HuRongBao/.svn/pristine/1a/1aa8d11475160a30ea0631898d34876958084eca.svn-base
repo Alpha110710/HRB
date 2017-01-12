@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\WorkSpace\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\WorkSpace\\HuRongBao\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\left_menu_setting_gesture_pwd.xml",
+        "source": "D:\\WorkSpace\\HuRongBao\\app\\src\\main\\res\\menu\\left_menu_setting_gesture_pwd.xml"
+    },
+    {
+        "merged": "D:\\WorkSpace\\HuRongBao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\left_menu_setting_gesture_pwd_create.xml",
+        "source": "D:\\WorkSpace\\HuRongBao\\app\\src\\main\\res\\menu\\left_menu_setting_gesture_pwd_create.xml"
+    }
+]
